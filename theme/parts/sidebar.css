@@ -205,3 +205,9 @@ link[href="chrome://global/content/elements/moz-input-common.css"]:has(~ .nested
 		margin: 0 !important;
 	}
 }
+
+/* Do not reveal sidebar splitters that Firefox explicitly hides. */
+#sidebar-splitter[hidden],
+#sidebar-launcher-splitter[hidden] {
+	display: none !important;
+}
